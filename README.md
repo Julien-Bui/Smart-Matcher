@@ -21,12 +21,3 @@ Une fois que l'application a démarré dans le terminal, ouvrez votre navigateur
 
 ---
 
-## 🛠️ Améliorations futures (To-Do List)
-
-Si vous souhaitez continuer à améliorer le projet, voici de superbes idées d'évolutions à développer :
-
-- [ ] **Base de données persistante** : Remplacer H2 par PostgreSQL en production pour sauvegarder toutes les analyses de CV de façon permanente.
-- [ ] **Authentification (Login)** : Ajouter un système de login sécurisé (ex: Spring Security & JWT) pour que chaque RH ait son propre espace.
-- [ ] **Historique des Matchs** : Créer un onglet `/historique` sur l'interface graphique pour revoir les anciens candidats scannés et leurs scores respectifs.
-- [ ] **Support Multi-formats** : En plus du PDF, configurer Tika pour accepter et décrypter automatiquement les `.docx` (Word).
-- [ ] **Dashboard Statistiques** : Créer des graphiques pour voir quelles compétences techniques manquent le plus souvent aux candidats postulant à une offre donnée.
