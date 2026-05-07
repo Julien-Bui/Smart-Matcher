@@ -104,14 +104,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (!response.ok) {
-                throw new Error(`Error: ${response.statusText}`);
+                const errorText = await response.text();
+                throw new Error(errorText || response.statusText);
             }
 
             const data = await response.json();
             displayResults(data);
         } catch (error) {
             console.error('Error during analysis:', error);
-            alert('An error occurred during analysis. Make sure the backend is running and you uploaded a valid PDF.');
+            alert(error.message);
         } finally {
             // Restore button
             btnText.classList.remove('hidden');
